@@ -1,0 +1,28 @@
+.buttonsection
+{
+	background-color: yellow;
+	height: 100px;
+	margin:20px;
+}
+#inputsection
+{
+	float:right;
+}
+#submitButton
+{
+	margin-top: 10px;
+	background-color: yellow;
+}
+#gifssection
+{
+	background-color: black;
+	height: 500px;
+}
+.jumbotron
+{
+	background-color: black;
+	color: white;
+	text-align: center;
+	
+	
+}
