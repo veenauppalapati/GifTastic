@@ -17,7 +17,7 @@
 #gifssection
 {
 	background-color: black;
-	height: 500px;
+	/*height: 500px;*/
 }
 .jumbotron
 {
@@ -26,4 +26,14 @@
 	text-align: center;
 	
 	
+}
+.userButtons
+{
+	margin:10px;
+}
+
+#gifssection
+{
+	margin:20px;
+	padding:20px;
 }
