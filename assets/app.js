@@ -1,11 +1,31 @@
-$("document").ready(function  (){
+$("document").ready(function(){
 
-	// we are creating an event listener of on click... on the click of the button submit, the steps that follow shall be executed
-	$("#submitButton").on("click", function(){
+  // we created an array to store the buttons
 
-		// retrieve the value of userInput
-		var userInput = $("#userinput").val();
-		console.log(userInput);
-		
-	});
+  var animals=[];
+  console.log(animals);
+
+function renderButtons(){
+
+  for (var i = 0; i < animals.length; i++){
+    $(".buttonsection").empty();
+    // we created a button tag
+    var button = $("<button>");
+    button.addClass("userButtons");
+    button.attr("data-name", animals[i]);
+    var buttonName = button.text(animals[i]); 
+     $("#buttons-view").append(buttonName);
+  }
+
+}
+renderButtons();
+  
+ $("#submitButton").on("click", function(event){
+  event.preventDefault();
+
+  var animal = $("#userinput").val().trim();
+  animals.push(animal);
+  renderButtons();
+ });
+
 });
